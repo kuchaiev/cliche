@@ -14,6 +14,13 @@
     url('../fonts/Inter-Bold.woff') format('woff');
 }
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,8 +36,13 @@ body {
     background-color: #111;
 }
 
+.header {
+    max-width: 1180px;
+    margin: 0 auto 80px;
+}
+
 .header__text-box {
-    margin-top: 151px;
+    margin-top: 96px;
 }
 
 .header__logo-box {
@@ -49,7 +61,7 @@ body {
 .heading-primary--main {
     display: flex;
     align-content: flex-end;
-    width: 800px;
+    width: 640px;
     margin: 0 auto;
     text-align: center;
     font-size: 144px;
@@ -72,7 +84,7 @@ body {
 
 .absolute {
     top: 50px;
-    left: 16px;
+    left: 40px;
     position: absolute;
     width: 240px;
 }
@@ -90,7 +102,7 @@ body {
 
 .header__arrow-box {
     display: flex;
-    margin-top: 112px;
+    margin-top: 48px;
 }
 
 .header__arrow-down {
@@ -101,6 +113,8 @@ body {
     display: flex;
     margin-top: 128px;
     text-align: center;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .section-about__heading {
@@ -129,15 +143,16 @@ body {
 .banner {
     display: flex;
     width: 90%;
+    max-width: 1180px;
     margin: 0 auto;
     background: linear-gradient(279.74deg, #C095FA 4.68%, #5651FF 95.39%);
     border-radius: 16px;
-    margin-bottom: 200px;
+    margin-bottom: 151px;
 }
 
 .banner__text {
     width: 70%;
-    margin: 32px 0 32px 56px;
+    margin: 32px 0 44px 56px;
 }
 
 .heading-secondary {
@@ -239,10 +254,12 @@ body {
     justify-content: space-between;
     margin: 0 80px 151px 80px;
     align-items: flex-end;
+    max-width: 1180px;
+    margin: 0 auto 151px;
 }
 
 .features__block {
-    width: 16%;
+    width: 22%;
 }
 
 .paragraph-body {
@@ -272,6 +289,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 144px;
+    max-width: 1180px;
+    margin: 0 auto 151px;
 }
 
 .foundation__block {
@@ -283,13 +302,13 @@ body {
 
 .foundation__header {
     padding: 24px 24px 24px 54px;
-    width: 48%;
+    width: 70%;
 }
 
 .foundation__image {
-    margin: 40px 0 0 0;
+    margin: 40px 0 -4px 0;
     width: 100%;
-    height: auto;
+    height: 202px;
 }
 
 .foundation__block .paragraph {
@@ -301,6 +320,8 @@ body {
     flex-wrap: wrap;
     margin: 0 80px;
     justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .section-onboard .heading-secondary {
@@ -313,10 +334,10 @@ body {
     display: flex;
     background: linear-gradient(118.67deg, #C095FA 18.59%, #F6D5DE 99.76%);
     border-radius: 16px;
-    width: 55%;
+    width: 52%;
     margin: 80px 0 64px 0;
     flex-wrap: wrap;
-    padding: 48px 48px;
+    padding: 48px 32px;
 }
 
 .onboard__block .heading-primary--main {
@@ -324,7 +345,7 @@ body {
 }
 
 .onboard__header {
-    width: 55%;
+    width:75%;
     margin: 0 0 32px 0;
 }
 
@@ -335,12 +356,12 @@ body {
 }
 
 .pros__col2 {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 40px;
 }
 
 .download {
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
 }
@@ -372,58 +393,47 @@ body {
     background: linear-gradient(121.94deg, #222222 0%, #111111 100%);
     text-align: center;
     border-radius: 16px;
-    width: 28%;
+    width: 30%;
     margin: 80px 0 64px 0;
     flex-wrap: wrap;
     padding: 48px 48px;
 }
 
 .onboard__header--questions {
-    width: 80%;
     margin: 0 0 120px 0;
 }
 
 .footer {
     margin: 151px 0 0 0;
     padding: 64px 0 80px 80px;
-    background: linear-gradient(165.29deg, #222222 0%, #111111 100%);
     display: flex;
     flex-wrap: wrap;
-}
-
-.footer__col1 {
-    width: 30%;
+    text-align: center;
+    background: linear-gradient(180deg, #111111 0%, #5651FF 100%);
 }
 
 .footer__logo-box {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    width: 180px;
     margin: 0 0 24px 0;
 }
 
 .footer__description {
-    margin: 0 0 24px 0;
+    display: block;
+    width: 480px;
+    margin: 0 auto;
 }
 
 .footer__copyright {
-    margin: 0 0 56px 0;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0 0 0;
+    opacity: 0.2;
 }
 
-.footer__col2 {
-    margin: 52px 0 0 80px;
-}
-
-.footer__col3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    width: 50%;
-    margin: 56px 0 0 0;
-}
-
-.footer__social {
-    padding: 0;
-}
-
-.telegram {
-    margin: 16px 0;
-}
