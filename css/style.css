@@ -223,9 +223,11 @@ body {
 }
 
 .banner__notion {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 21px;
     font-family: 'Inter';
     font-weight: 300;
     text-align: center;
@@ -236,13 +238,11 @@ body {
 
 .notion_logo {
     text-decoration: none;
-    width: 16px;
-    height: 16.68px;
     margin: 0 4px 0 4px;
 }
 
 .notion__link {
-    text-decoration: underline;
+    border-bottom: 0.5px solid rgb(255, 255, 255, 0.6);
 }
 
 .btn {
