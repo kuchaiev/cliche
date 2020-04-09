@@ -239,6 +239,8 @@ body {
 .notion_logo {
     text-decoration: none;
     margin: 0 4px 0 4px;
+    height: 20px;
+    width: auto;
 }
 
 .notion__link {
